@@ -47,6 +47,7 @@ function solution(dirs) {
   for (let dir of dirs) {
     // 1) 명령어에 따른 좌표 업데이트
     let [nx, ny] = updateLocation(x, y, dir);
+
     // 2) 좌표평면을 벗어나는지 확인
     if (!isVaildMove(nx, ny)) continue;
 
